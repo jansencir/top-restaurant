@@ -12,3 +12,10 @@
 
 // add event listener to buttons
 // each should first clear the tabs of the content div
+
+
+import random from "./pageLoad";
+import homePage from "./home";
+
+random();
+homePage();
