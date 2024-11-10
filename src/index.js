@@ -18,6 +18,7 @@ import initialLoad from "./pageLoad";
 import homePage from "./home";
 import menuPage from "./menu";
 import infoPage from "./info";
+import clearPage from "./clear";
 
 const homeBtn = document.getElementById("home-button");
 const menuBtn = document.getElementById("menu-button");
@@ -26,13 +27,16 @@ const infoBtn = document.getElementById("info-button");
 initialLoad();
 
 homeBtn.addEventListener("click", () => {
+    clearPage();
     homePage();
 })
 
 menuBtn.addEventListener("click", () => {
+    clearPage();
     menuPage();
 })
 
 infoBtn.addEventListener("click", () => {
+    clearPage();
     infoPage();
 })
