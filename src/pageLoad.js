@@ -1,14 +1,7 @@
+import homePage from "./home";
 
-const random = () => {
-    const content = document.getElementById("content");
-    const pageContent = document.createElement("div");
-    pageContent.classList.add("page-content");
-
-    const randomParagraph = document.createElement("p");
-    randomParagraph.textContent = "Blah Blah Blah";
-    pageContent.appendChild(randomParagraph);
-
-    content.appendChild(pageContent);
+const initialLoad = () => {
+    homePage();
 }
 
-export default random;
+export default initialLoad;

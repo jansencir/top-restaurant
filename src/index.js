@@ -14,12 +14,12 @@
 // each should first clear the tabs of the content div
 
 
-import random from "./pageLoad";
+import initialLoad from "./pageLoad";
 import homePage from "./home";
 import menuPage from "./menu";
 import infoPage from "./info";
 
-random();
+initialLoad();
 homePage();
 menuPage();
 infoPage();
