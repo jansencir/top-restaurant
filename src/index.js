@@ -19,7 +19,20 @@ import homePage from "./home";
 import menuPage from "./menu";
 import infoPage from "./info";
 
+const homeBtn = document.getElementById("home-button");
+const menuBtn = document.getElementById("menu-button");
+const infoBtn = document.getElementById("info-button");
+
 initialLoad();
-homePage();
-menuPage();
-infoPage();
+
+homeBtn.addEventListener("click", () => {
+    homePage();
+})
+
+menuBtn.addEventListener("click", () => {
+    menuPage();
+})
+
+infoBtn.addEventListener("click", () => {
+    infoPage();
+})
