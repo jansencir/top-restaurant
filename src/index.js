@@ -16,6 +16,8 @@
 
 import random from "./pageLoad";
 import homePage from "./home";
+import menuPage from "./menu";
 
 random();
 homePage();
+menuPage();
