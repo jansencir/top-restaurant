@@ -13,7 +13,7 @@
 // add event listener to buttons
 // each should first clear the tabs of the content div
 
-
+import "./styles.css";
 import initialLoad from "./pageLoad";
 import homePage from "./home";
 import menuPage from "./menu";
