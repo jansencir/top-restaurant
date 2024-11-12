@@ -7,17 +7,20 @@ const infoPage = () => {
     content.appendChild(header);
 
     const div1 = document.createElement("div");
+    div1.setAttribute("id", "hours");
     const hours = document.createElement("h2");
     hours.textContent = "Hours of Operation:";
     div1.appendChild(hours);
     const hoursMondayFriday = document.createElement("p");
     hoursMondayFriday.textContent = "Monday to Friday: 12pm-10pm";
     div1.appendChild(hoursMondayFriday);
+
     const hoursSatSun = document.createElement("p");
     hoursSatSun.textContent = "Saturday to Sunday: 2pm-10pm";
     div1.appendChild(hoursSatSun);
 
     const div2 = document.createElement("div");
+    div2.setAttribute("id", "attire");
     const attire = document.createElement("h2");
     attire.textContent = "Attire:";
     div2.appendChild(attire);
@@ -35,14 +38,22 @@ const infoPage = () => {
     const rainbow = document.createElement("img");
     rainbow.src = "../src/assets/rainbow.jpg";
     div3.appendChild(rainbow);
+
+    const div31 = document.createElement("div");
     const directions = document.createElement("h2");
     directions.textContent = "Directions:"
-    div3.appendChild(directions);
+    div31.appendChild(directions);
     const directions1 = document.createElement("p");
     directions1.textContent = "Just follow the rainbow...";
-    div3.appendChild(directions1);
+    div31.appendChild(directions1);
     const directions2 = document.createElement("p");
     directions2.textContent = "(We are not a real place by the way. You WILL get lost trying to find this fictional place.)"
+    div31.appendChild(directions2);
+    div3.appendChild(div31);
+
+    div1.classList.add("column");
+    div2.classList.add("column");
+    div3.classList.add("row");
 
     content.appendChild(div1);
     content.appendChild(div2);

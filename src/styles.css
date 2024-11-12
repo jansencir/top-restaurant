@@ -1,8 +1,58 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    text-align: center;
 }
 
 img {
-    height: 200px;
+    height: 350px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+#content {
+    width: 1000px;
+    outline: 1px solid red;
+    margin: 0 auto;
+}
+
+#content > div > p,
+#content > div > div > p {
+    font-size: 32px;
+    margin: auto 0;
+}
+
+#content > div > div > img {
+    height: 400px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.space-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#content > #hours > p,
+#content > #attire > p {
+    font-size: 24px;
 }

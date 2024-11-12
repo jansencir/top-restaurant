@@ -32,6 +32,10 @@ const homePage = () => {
     image3.src = "../src/assets/waikiki.jpg";
     div3.appendChild(image3);
 
+    div1.classList.add("row");
+    div2.classList.add("row");
+    div3.classList.add("row");
+
     content.appendChild(div1);
     content.appendChild(div2);
     content.appendChild(div3);

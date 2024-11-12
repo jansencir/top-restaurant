@@ -48,6 +48,11 @@ const menuPage = () => {
     div4.appendChild(div41);
     div4.appendChild(div42);
 
+    div1.classList.add("row");
+    div2.classList.add("row");
+    div3.classList.add("row");
+    div4.classList.add("space-evenly");
+
     content.appendChild(div1);
     content.appendChild(div2);
     content.appendChild(div3);
