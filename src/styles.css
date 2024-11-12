@@ -6,10 +6,12 @@
 
 body {
     text-align: center;
+    color: #222222
 }
 
-img {
-    height: 350px;
+button {
+    height: 36px;
+    width: 72px;
 }
 
 h1 {
@@ -18,7 +20,6 @@ h1 {
 
 #content {
     width: 1000px;
-    outline: 1px solid red;
     margin: 0 auto;
 }
 
@@ -26,6 +27,10 @@ h1 {
 #content > div > div > p {
     font-size: 32px;
     margin: auto 0;
+}
+
+img {
+    height: 350px;
 }
 
 #content > div > div > img {
@@ -53,6 +58,7 @@ h1 {
 }
 
 #content > #hours > p,
-#content > #attire > p {
+#content > #attire > p,
+#content > #directions > div > p {
     font-size: 24px;
 }

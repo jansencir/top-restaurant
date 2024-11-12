@@ -35,6 +35,7 @@ const infoPage = () => {
     div2.appendChild(attireRule3);
 
     const div3 = document.createElement("div");
+    div3.setAttribute("id", "directions");
     const rainbow = document.createElement("img");
     rainbow.src = "../src/assets/rainbow.jpg";
     div3.appendChild(rainbow);
